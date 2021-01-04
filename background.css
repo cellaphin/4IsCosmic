@@ -1,0 +1,47 @@
+.background {
+    position: fixed;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color:#ff9c4057;
+}
+
+.circle-small {
+    width:25px;
+    height:25px;
+}
+
+.circle-medium {
+    width:50px;
+    height:50px;
+}
+
+.circle-large {
+    width:100px;
+    height:100px;
+}
+
+.travel{
+    animation: travel  ease-in-out infinite;
+}
+
+@keyframes travel {
+    0% {
+        
+        opacity:0;
+        transform: translateX(-200px) ;
+    }
+    10% {
+        opacity:1;
+        transform: translateX(-100px);
+    }
+    80% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+        transform: translateX(800px);
+    }
+}
